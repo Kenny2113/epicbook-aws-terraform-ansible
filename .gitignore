@@ -1,0 +1,33 @@
+# Python virtual environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Ansible sensitive files
+ansible/inventory.ini
+ansible/group_vars/**/vault.yml
+*.retry
+*.backup
+*.new
+
+# SSH keys and environment secrets
+*.pem
+*.key
+.env
+.env.*
+
+# Terraform generated files and secrets
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfplan
+crash.log
+crash.*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+ansible/group_vars/**/vars.yml
+!ansible/roles/epicbook/templates/.env.j2
